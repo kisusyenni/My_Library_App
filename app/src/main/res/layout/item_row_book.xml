@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/layout_border">
+    <ImageView
+        android:id="@+id/iv_item_image"
+        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_marginEnd="16dp"
+        tools:src="@tools:sample/avatars"
+        android:contentDescription="@string/book_title" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_item_title"
+            style="@style/TextContent.Title"
+            tools:text="@string/book_title" />
+        <TextView
+            android:id="@+id/tv_item_author"
+            style="@style/TextContent.Primary"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="@string/book_author" />
+        <TextView
+            android:id="@+id/tv_item_status"
+            style="@style/TextContent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            tools:text="@string/book_status" />
+        <RatingBar
+            android:id="@+id/rb_item_rating"
+            style="@style/RatingBar"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/btn_favorite"
+                style="@style/Button.Icon.Favorite"/>
+
+            <Button
+                android:id="@+id/btn_share"
+                style="@style/Button.Icon.Share"
+                android:text="@string/btn_share" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

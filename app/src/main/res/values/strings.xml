@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">My Library</string>
+    <string name="book_title">Book\'s Title</string>
+    <string name="book_author">Book\'s Author</string>
+    <string name="book_synopsis">Book\'s Synopsis</string>
+    <string name="book_status">Book\'s Status</string>
+    <string name="book_rating">0</string>
+    <string name="detail">Detail</string>
+    <string name="see_detail">See Detail</string>
+    <string name="user_name">Kisusyenni Venessa</string>
+    <string name="user_job">Learning Android Development at Dicoding</string>
+    <string name="user_birthday">29 April 2001</string>
+    <string name="user_location">Kota Batam, Kepulauan Riau</string>
+    <string name="user_email">kisusyenni01@gmail.com</string>
+    <string name="test">Lorem ipsum dolor sit amet this is just a random text for testing</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="publisher_title">Publisher</string>
+    <string name="pages_title">Pages</string>
+    <string name="isbn_title">ISBN</string>
+    <string name="language_title">Language</string>
+    <string name="genres_title">Genres</string>
+    <string name="btn_share">Share</string>
+    <string name="favorite">Favorite</string>
+    <string name="app_quotes">Books train your imagination to think big...</string>
+    <string name="about_title">About</string>
+</resources>

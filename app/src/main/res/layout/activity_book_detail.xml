@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <!--    Book Main Information    -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:id="@+id/book_detail_image"
+                android:layout_width="150dp"
+                android:layout_height="225dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@string/test"
+                android:scaleType="fitCenter"
+                tools:src="@tools:sample/avatars" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/book_detail_image"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/book_detail_title"
+                    style="@style/TextContent.Title.Large"
+                    android:layout_marginBottom="8dp"
+                    tools:text="@string/test" />
+
+                <TextView
+                    android:id="@+id/book_detail_author"
+                    style="@style/TextContent.Primary"
+                    android:layout_marginBottom="8dp"
+                    tools:text="@string/test" />
+
+                <TextView
+                    android:id="@+id/book_detail_status"
+                    tools:drawableLeft="@drawable/ic_baseline_emoji_events_24"
+                    style="@style/TextContent"
+                    android:layout_marginBottom="16dp"
+                    tools:text="@string/test" />
+
+                <RatingBar
+                    android:id="@+id/book_detail_rating"
+                    style="@style/RatingBar"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_border"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp">
+
+            <ToggleButton
+                android:id="@+id/detail_btn_favorite"
+                style="@style/Button.Icon.Favorite"
+                android:layout_weight=".5"/>
+
+            <Button
+                android:id="@+id/detail_btn_share"
+                style="@style/Button.Icon.Share"
+                android:layout_weight=".5"
+                android:text="@string/btn_share" />
+
+        </LinearLayout>
+
+        <!--    Book Synopsis Information    -->
+        <TextView
+            android:id="@+id/tv_synopsis_title"
+            style="@style/TextContent.Title"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/synopsis"/>
+
+        <TextView
+            android:id="@+id/book_detail_synopsis"
+            style="@style/TextContent"
+            android:background="@drawable/layout_border"
+            android:paddingBottom="16dp"
+            tools:text="@string/test" />
+
+        <!--    Book More Detail Information    -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp">
+            <!--      Book Publisher      -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/tv_publisher_title"
+                    style="@style/TableHead"
+                    android:text="@string/publisher_title" />
+
+                <TextView
+                    android:id="@+id/book_detail_publisher"
+                    style="@style/TableData"
+                    tools:text="@string/test" />
+            </TableRow>
+
+            <!--      Book Total Pages      -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/tv_pages_title"
+                    style="@style/TableHead"
+                    android:text="@string/pages_title" />
+
+                <TextView
+                    android:id="@+id/book_detail_pages"
+                    style="@style/TableData"
+                    tools:text="@string/test" />
+            </TableRow>
+
+            <!--     Book ISBN       -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/tv_isbn_title"
+                    style="@style/TableHead"
+                    android:text="@string/isbn_title" />
+
+                <TextView
+                    android:id="@+id/book_detail_isbn"
+                    style="@style/TableData"
+                    tools:text="@string/test" />
+            </TableRow>
+
+            <!--     Book Language       -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/tv_language_title"
+                    style="@style/TableHead"
+                    android:text="@string/language_title" />
+
+                <TextView
+                    android:id="@+id/book_detail_language"
+                    style="@style/TableData"
+                    tools:text="@string/test" />
+            </TableRow>
+
+            <!--     Book Genres       -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/tv_genres_title"
+                    style="@style/TableHead"
+                    android:text="@string/genres_title" />
+
+                <TextView
+                    android:id="@+id/book_detail_genres"
+                    style="@style/TableData"
+                    tools:text="@string/test" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>
